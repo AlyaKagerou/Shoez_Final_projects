@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    background-color: #fdfff9;
+}
+.navbar{
+    background-color: #fdfff9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 50px;
+}
+.navbar-brand{
+    font-size: 32px;
+    font-weight: 700;
+    color: #3A83B6;
+}
+.container-content{
+    margin: 0px 100px;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    color:#3A83B6;
+    margin-right: 1rem;
+}
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.switch{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: #d5d8d1;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 5px;
+}
+.switch::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background:#3A83B6;
+    border-radius: 50px;
+    transition: 0.1s;
+}
+input:checked + .switch{
+    background-color: brown;
+}
+input:checked + .switch::after{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title-login{
+    font-family: "Plus Jakarta Sans",sans-serif;
+    margin: 1rem 0px;
+}
+.forpass a{
+    text-decoration: none;
+    color: #434343;
+    font-weight: 600;
+}
+.btn-login:hover{
+    background-color: #20577e;
+}
+.form-control{
+    padding: 14px;
+}
+.btn-eyes{
+    background-color: #3A83B6;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+.eyes{
+    background: none;
+    color: #fdfff9;
+    font-size: 25px;
+}
+.btn-sign-in{
+    padding: 10px 30px;
+    background-color: #3A83B6;
+    border: none;
+    border-radius: 8px;
+}
+@media screen and (max-width: 768px){
+    .container-content{
+        margin: 0px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
