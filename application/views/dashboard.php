@@ -8,204 +8,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/dashboard.css') . '?v=' . time();?>">
-    <title>Admin Dashboard</title>
+    <title>Dashboard | Shoez.</title>
 </head>
 
 <body>
-    <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-dashboard" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4">Shoez.</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="bx bxs-dashboard bx-sm me-2"></i>Dashboard</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="bx bxs-category bx-sm me-2"></i>Categories</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="bx bxs-report bx-sm me-2"></i>Reports</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="bx bxs-package bx-sm me-2"></i>Products</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="bx bxs-user bx-sm me-2"></i>Customers</a>
-            </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4 d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                    <i class="bx bx-menu bx-sm me-3" id="menu-toggle"></i>
-                    <h2 class="title-dash">Dashboard</h2>
-                </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <div class="toggle">
-                            <i class='bx bx-moon bx-sm'></i>
-                            <input type="checkbox" id="switch">
-                            <label for="switch" class="switch" onclick="ubahMode()"></label>
-                        </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold d-flex align-items-center" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bx bxs-user bx-sm me-2"></i>John Doe
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="container-fluid px-4">
-                <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="no">720</h3>
-                                <p class="fs-5">Products</p>
-                            </div>
-                            <i class="bx bxs-package bx-md fs-1 border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="no">4920</h3>
-                                <p class="fs-5">Order</p>
-                            </div>
-                            <i
-                                class="bx bx-check bx-md fs-1 border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="no">3899</h3>
-                                <p class="fs-5">Delivery</p>
-                            </div>
-                            <i class="bx bxs-truck bx-md border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="no">25%</h3>
-                                <p class="fs-5">Increase</p>
-                            </div>
-                            <i class="bx bx-bar-chart bx-md border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row my-5">
-                    <h3 class="title-dash">Recent Orders</h3>
-                    <div class="col">
-                        <table class="table bg-table rounded shadow-sm  table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Television</td>
-                                    <td>Jonny</td>
-                                    <td>$1200</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Laptop</td>
-                                    <td>Kenny</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cell Phone</td>
-                                    <td>Jenny</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Fridge</td>
-                                    <td>Killy</td>
-                                    <td>$300</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Books</td>
-                                    <td>Filly</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Gold</td>
-                                    <td>Bumbo</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Dress</td>
-                                    <td>Kimo</td>
-                                    <td>$255</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Paint</td>
-                                    <td>Zico</td>
-                                    <td>$434</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Carpet</td>
-                                    <td>Jeco</td>
-                                    <td>$1236</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Food</td>
-                                    <td>Haso</td>
-                                    <td>$422</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <!-- sidebar -->
+    <div class="sidebar d-flex flex-column align-item-start" id="sidebar">
+        <h1 class="sidebar-brand">Shoez.</h1>
+        <ul class="sidebar-nav d-flex flex-column">
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-dashboard icon-dash"></i>Dashboard</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-category icon-dash"></i>Categories</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-package icon-dash"></i>Product</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-truck icon-dash"></i>Order</a></li>
+        </ul>
+        <div class="border-bottom m-3"></div>
+        <ul class="sidebar-nav d-flex flex-column">
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-cog icon-dash"></i>Seting</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="bx bxs-log-out icon-dash"></i>Log Out</a></li>
+        </ul>
     </div>
-    <!-- /#page-content-wrapper -->
-    </div>
+    <!-- sidebar -->
+
+    <!-- navbar -->
+    <section class="p-4 dash-container">
+        <nav class="navbar bg-nav sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <button class="btn-menu" id="menu-btn"><i class="bx bx-menu bx-sm"></i></button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navbar -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
