@@ -16,7 +16,7 @@
 <div class="sidebar d-flex flex-column align-item-start" id="sidebar">
         <h1 class="side-brand">Shoez.</h1>
         <ul class="side-nav d-flex flex-column">
-            <li class="side-item"><a href="#" class="side-link"><i class='bx bxs-dashboard icon-dash'></i>Dashboard</a></li>
+            <li class="side-item"><a href="#" class="side-link active"><i class='bx bxs-dashboard icon-dash'></i>Dashboard</a></li>
             <li class="side-item"><a href="#" class="side-link"><i class='bx bxs-category icon-dash'></i>Categories</a></li>
             <li class="side-item"><a href="#" class="side-link"><i class='bx bxs-package icon-dash'></i>Product</a></li>
             <li class="side-item"><a href="#" class="side-link"><i class='bx bxs-truck icon-dash'></i>Order</a></li>
@@ -67,7 +67,7 @@
                         <h3 class="no">0</h3>
                         <p class="asd">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 border rounded-full secondary-bg p-3"></i>
+                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -76,7 +76,7 @@
                         <h3 class="no">0</h3>
                         <p class="asd">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 border rounded-full secondary-bg p-3"></i>
+                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -85,7 +85,7 @@
                         <h3 class="no">0</h3>
                         <p class="asd">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 border rounded-full secondary-bg p-3"></i>
+                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -94,7 +94,7 @@
                         <h3 class="no">0</h3>
                         <p class="asd">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 border rounded-full secondary-bg p-3"></i>
+                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Date</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Status</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -169,45 +169,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script>
-        var menu_btn = document.querySelector("#menu-btn")
-        var sidebar = document.querySelector("#sidebar")
-        var container = document.querySelector(".my-container")
-        menu_btn.addEventListener("click", () => {
-            sidebar.classList.toggle("active-nav")
-            container.classList.toggle("active-cont")
-        });
-
-        const ctx = document.getElementById('myChart');
-    
-        new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor:[
-                '#EF4A53',
-                '#6897FF',
-                '#FFE663',
-                '#5EFF5A',
-                '#9E63FF',
-                '#FFAC60'
-            ],
-            borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-            y: {
-                beginAtZero: true
-            }
-            }
-        }
-        });
-    </script>
+    <script src="<?php echo base_url('assets/js/dashboard.js')?>"></script>
 </body>
 
 </html>

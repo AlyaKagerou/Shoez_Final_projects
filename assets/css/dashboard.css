@@ -37,10 +37,17 @@ body {
   color: var(--primary);
   font-size: 3rem;
 }
+.side-item .active{
+  background-color: var(--primary);
+  color: #ffffff;
+  margin-right: 1rem;
+  border-radius: 6px;
+  padding:10px;
+}
 .side-link {
   font-size: 16px;
   text-decoration: none;
-  color: #b8b8b8;
+  color: #9f9f9f;
   display: flex;
   align-items: center;
   margin-left: -1rem;
@@ -169,7 +176,7 @@ input:checked + .switch::after{
   padding: 10px;
 }
 .secondary-bg{
-  border-radius: 50%;
+  border-radius: 10px;
   background-color: var(--accent);
   border: none;
 }
