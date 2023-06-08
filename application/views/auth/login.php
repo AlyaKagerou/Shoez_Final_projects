@@ -1,18 +1,4 @@
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">Shoez.</a>
-            <div class="toggle">
-                <i class='bx bx-moon bx-sm'></i>
-                <input type="checkbox" id="switch">
-                <label for="switch" class="switch" onclick="ubahMode()"></label>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar -->
-
-    <!-- login -->
-    <section class="login-page">
+   <!-- login -->
         <div class="container-content py-1">
             <div class="row login p-5">
                 <div class="col-12 col-lg-6">
@@ -39,9 +25,4 @@
                     </form>
                 </div>
             </div>
-            <div class="copyright text-center mb-1">
-                <span class="text-dark">&copy;2023 Shoez. | All Reserved</span>   
-            </div>
-        </div>
-    </section>
-    <!-- login -->
+     <!-- login  -->
