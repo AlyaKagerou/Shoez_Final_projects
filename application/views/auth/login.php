@@ -19,10 +19,11 @@
                         <div class="mb-3 forpass">
                             <span><a href="">Forgot Password</a></span>
                         </div>
-                        <div class="sign-in-apps d-flex">
+                        <div class="d-flex justify-content-between align-items-center">
                             <button type="submit" class="btn-sign-in">Sign In</button>
+                            <a href="#" class="link-text">Don't have account? Sign Up!</a>
                         </div>
                     </form>
                 </div>
             </div>
-     <!-- login  -->
+     <!-- login -->

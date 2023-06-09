@@ -4,17 +4,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter",sans-serif;
-    background-color: #fdfff9;
+    overflow: hidden;
+}
+:root{
+    --background:#fdfff9;
+    --primary:#157ABF;
+    --accent:#BDD1FF;
+    --text:#252528;
+    --sidebar-color:#ffffff;
+    --bg-card:#fefefe;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--background);
 }
 .navbar{
-    background-color: #fdfff9;
+    background-color: var(--background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 10px 50px;
 }
 .navbar-brand{
     font-size: 32px;
     font-weight: 700;
-    color: #3A83B6;
+    color: var(--primary);
 }
 .container-content{
     margin: 0px 100px;
@@ -22,7 +34,7 @@
 .toggle{
     display: flex;
     align-items: center;
-    color:#3A83B6;
+    color:var(--primary);
     margin-right: 1rem;
 }
 input[type=checkbox]{
@@ -48,7 +60,7 @@ input[type=checkbox]{
     left: 5px;
     width: 10px;
     height: 10px;
-    background:#3A83B6;
+    background:var(--primary);
     border-radius: 50px;
     transition: 0.1s;
 }
@@ -80,7 +92,7 @@ input:checked + .switch::after{
     padding: 14px;
 }
 .btn-eyes{
-    background-color: #3A83B6;
+    background-color: var(--primary);
     border: none;
     padding: 0px 15px;
     border-radius: 5px;
@@ -92,9 +104,15 @@ input:checked + .switch::after{
 }
 .btn-sign-in{
     padding: 10px 30px;
-    background-color: #3A83B6;
+    background-color: var(--primary);
     border: none;
     border-radius: 8px;
+    color: #fdfff9;
+}
+.link-text {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #157ABF;
 }
 @media screen and (max-width: 768px){
     .container-content{
