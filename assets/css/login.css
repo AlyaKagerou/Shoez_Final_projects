@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter",sans-serif;
-    overflow: hidden;
 }
 :root{
     --background:#fdfff9;
@@ -94,13 +93,12 @@ input:checked + .switch::after{
 .btn-eyes{
     background-color: var(--primary);
     border: none;
-    padding: 0px 15px;
     border-radius: 5px;
+    padding: 10px;
 }
 .eyes{
     background: none;
     color: #fdfff9;
-    font-size: 25px;
 }
 .btn-sign-in{
     padding: 10px 30px;
@@ -108,6 +106,10 @@ input:checked + .switch::after{
     border: none;
     border-radius: 8px;
     color: #fdfff9;
+    transition: 0.3s;
+}
+.btn-sign-in:hover{
+    background-color: #20577e;
 }
 .link-text {
     text-decoration: none;
