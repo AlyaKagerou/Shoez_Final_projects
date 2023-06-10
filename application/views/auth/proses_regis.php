@@ -6,7 +6,7 @@
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                     <h1 class="title-login">Sign Up</h1>
-                    <form method="post" action="<?= base_url('auth/registration');?>">
+                    <form method="post" action="<?= base_url('auth/proses_regis');?>">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
                             <small class="text-danger"><?= form_error('name');?></small>
