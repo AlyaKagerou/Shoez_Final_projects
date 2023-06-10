@@ -4,7 +4,7 @@
         <div class="container-content py-1">
             <div class="hero py-5">
                 <div class="hero-desc">
-                    <h1 class="title">Amet minim mollit non deserunt.</h1>
+                    <h1 class="title">Amet minim mollit <span class="blue">non</span>  deserunt.</h1>
                     <p class="lead my-4">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     <button class="btn-cta">Explore More</button>
                 </div>
@@ -78,7 +78,7 @@
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Red</h5>
-                            <p class="text-price">Rp. 350.00</p>
+                            <p class="text-price">IDR 350K</p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Yellow</h5>
-                            <p class="text-price">Rp. 350.00</p>
+                            <p class="text-price">IDR 350K</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Red</h5>
-                            <p class="text-price">Rp. 350.00</p>
+                            <p class="text-price">IDR 350K</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Yellow</h5>
-                            <p class="text-price">Rp. 350.00</p>
+                            <p class="text-price">IDR 350K</p>
                         </div>
                     </div>
                 </div>
@@ -148,27 +148,27 @@
         <div class="container-content py-5">
             <div class="row row-gap-3">
                 <div class="col-12 col-lg-4">
-                    <div class="cardblue p-3 rounded">
+                    <div class="cardprimer p-3 rounded">
                         <div class="card-body">
-                            <i class="bx bxs-check-shield bx-md"></i>
-                            <h4 class="card-title-service mt-2">Velit officia.</h4>
-                            <p class="card-text-survice">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="cardblue p-3 rounded">
-                        <div class="card-body">
-                            <i class="bx bxs-package bx-md"></i>
+                            <i class="bx bxs-check-shield bx-md icon-feature"></i>
                             <h4 class="card-title-service mt-2">Velit officia.</h4>
                             <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="cardblue p-3 rounded">
+                    <div class="cardprimer p-3 rounded">
                         <div class="card-body">
-                            <i class="bx bxs-truck bx-md"></i>
+                            <i class="bx bxs-package bx-md icon-feature"></i>
+                            <h4 class="card-title-service mt-2">Velit officia.</h4>
+                            <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="cardprimer p-3 rounded">
+                        <div class="card-body">
+                            <i class="bx bxs-truck bx-md icon-feature"></i>
                             <h4 class="card-title-service mt-2">Velit officia.</h4>
                             <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
@@ -230,7 +230,7 @@
                     </ul>
                 </div>
             </div>
-            <hr>
+            <hr class="hr-footer">
             <div class="text-center">
                 <span class="text-light">&copy;2023 Shoez. | All Reserved</span>   
             </div>
