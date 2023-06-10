@@ -5,7 +5,10 @@
                     <img src="<?php echo base_url('assets/img/Computer_login.png')?>" alt="computer_login" class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h1 class="title-login mb-4">Sign In</h1>
+                    <div class="text">
+                        <h1 class="title-login">Sign In</h1>
+                    </div>
+                    <?= $this->session->flashdata('message'); ?>
                     <form method="post" action="<?= base_url('auth');?>">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email">
