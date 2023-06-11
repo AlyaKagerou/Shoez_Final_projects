@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter",sans-serif;
 }
 :root{
-  --background:#f2f2f2;
+  --background:#f8f9fc;
   --primary:#157ABF;
   --accent:#BDD1FF;
   --text:#252528;
@@ -36,6 +38,7 @@ body {
   margin:1rem auto;
   color: var(--primary);
   font-size: 3rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .side-item .active{
   background-color: var(--primary);
@@ -61,6 +64,17 @@ body {
 .icon-dash{
   margin-right: 5px;
   font-size: 25px;
+}
+.title{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+#vertical-line{
+  width: 2px;
+  height: 2rem;
+  background-color: var(--text);
+}
+.img-profile{
+  width: 30px;
 }
 .navbar{
   background-color: var(--background);
@@ -130,7 +144,7 @@ input:checked + .switch::after{
   padding: 3px 10px;
 }
 .dropdown-menu{
-  margin-left: -4.7rem;
+  margin-right: 4.7rem;
   margin-top: 5px;
 }
 .my-container {
