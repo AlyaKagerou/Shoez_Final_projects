@@ -18,15 +18,15 @@
     --icon-feature:#fdfff9;
 }
 .dark{
-    --background:#201f24;
+    --background:#3c3c3c;
     --primary:#339FE9;
     --text-link:#B4B8AB;
     --text-lead:#B4B8AB;
     --primary-hover:#0079c9;
     --accent:#BDD1FF;
-    --card-primary:#363636;
+    --card-primary:#282828;
     --text:#F4F9E9;
-    --footer-color:#363636;
+    --footer-color:#282828;
     --icon-feature:#339FE9;
 }
 ::-webkit-scrollbar{

@@ -8,10 +8,16 @@
 :root{
     --background:#fdfff9;
     --primary:#157ABF;
-    --accent:#BDD1FF;
+    --primary-hover:#006bb3;
     --text:#252528;
-    --sidebar-color:#ffffff;
-    --bg-card:#fefefe;
+    --background-form:#ffffff;
+}
+.dark{
+    --background:#3c3c3c;
+    --primary:#339FE9;
+    --primary-hover:#0079c9;
+    --text:#F4F9E9;
+    --background-form:#363636;
 }
 body {
     min-height: 100vh;
@@ -64,7 +70,7 @@ input[type=checkbox]{
     transition: 0.1s;
 }
 input:checked + .switch{
-    background-color: brown;
+    background-color: #a6a6a6;
 }
 input:checked + .switch::after{
     left: calc(100% - 5px);
@@ -78,27 +84,23 @@ input:checked + .switch::after{
 .title-login{
     font-family: "Plus Jakarta Sans",sans-serif;
     margin: 1rem 0px;
+    color: var(--text);
+}
+.mb-3 input{
+    background-color:var(--background-form);
+    border: 1px solid #484848;
+    color: var(--text);
+}
+.mb-3 input::placeholder{
+    color: #B4B8AB;
 }
 .forpass a{
     text-decoration: none;
-    color: #434343;
+    color: var(--text);
     font-weight: 600;
-}
-.btn-login:hover{
-    background-color: #20577e;
 }
 .form-control{
     padding: 14px;
-}
-.btn-eyes{
-    background-color: var(--primary);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-}
-.eyes{
-    background: none;
-    color: #fdfff9;
 }
 .btn-sign-in{
     padding: 10px 30px;
@@ -109,12 +111,15 @@ input:checked + .switch::after{
     transition: 0.3s;
 }
 .btn-sign-in:hover{
-    background-color: #20577e;
+    background-color: var(--primary-hover);
 }
 .link-text {
     text-decoration: none;
     margin-left: 1rem;
-    color: #157ABF;
+    color: var(--primary);
+}
+.text-footer{
+    color: var(--text);
 }
 @media screen and (max-width: 768px){
     .container-content{
