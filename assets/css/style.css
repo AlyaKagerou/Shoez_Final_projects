@@ -15,6 +15,7 @@
     --card-primary:#94d2ff;
     --text:#252528;
     --footer-color:#157ABF;
+    --icon-feature:#fdfff9;
 }
 .dark{
     --background:#201f24;
@@ -26,6 +27,7 @@
     --card-primary:#363636;
     --text:#F4F9E9;
     --footer-color:#363636;
+    --icon-feature:#339FE9;
 }
 ::-webkit-scrollbar{
     background: transparent;
@@ -258,7 +260,7 @@ input:checked + .switch::after{
     width: 100%;
 }
 .icon-feature{
-    color: var(--text);
+    color: var(--icon-feature);
 }
 .cardprimer{
     background-color: var(--card-primary);
@@ -298,7 +300,7 @@ input:checked + .switch::after{
 }
 .footername{
     font-weight: 700;
-    color: #fdfff9;
+    color: var(--icon-feature);
 }
 .footerdesc{
     color: #fdfff9;
@@ -310,7 +312,7 @@ input:checked + .switch::after{
 .links{
     font-size:17px;
     font-weight: bold;
-    color: #fdfff9;
+    color: var(--icon-feature);
     margin-top: 1rem;
 }
 .footer-item{
@@ -354,7 +356,7 @@ input:checked + .switch::after{
         flex-direction: column-reverse;
     }
     .card-img-overlay{
-        margin-top: 130px;
+        margin-top: 175px;
     }
     .about{
         flex-direction: column-reverse;

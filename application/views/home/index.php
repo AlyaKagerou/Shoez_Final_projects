@@ -207,17 +207,17 @@
                 <div class="col-md-3">
                     <p class="links link1">Quick Links</p>
                     <ul class="footer-item">
-                        <li class="footer-link"><a href="#">Pages 1</a></li>
-                        <li class="footer-link"><a href="#">Pages 2</a></li>
-                        <li class="footer-link"><a href="#">Pages 3</a></li>
+                        <li class="footer-link"><a href="#">About Us</a></li>
+                        <li class="footer-link"><a href="#">Product</a></li>
+                        <li class="footer-link"><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="links link2">Community</p>
+                    <p class="links link2">Resource</p>
                     <ul class="footer-item">
-                        <li class="footer-link"><a href="#">Pages 1</a></li>
-                        <li class="footer-link"><a href="#">Pages 2</a></li>
-                        <li class="footer-link"><a href="#">Pages 3</a></li>
+                        <li class="footer-link"><a href="#">Terms</a></li>
+                        <li class="footer-link"><a href="#">Privacy</a></li>
+                        <li class="footer-link"><a href="#">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
