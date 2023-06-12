@@ -1,4 +1,4 @@
-            <h1 class="my-3 title">Dashboard</h1>
+            <h1 class="my-3 title">Welcome, Alya</h1>
 
         <!-- main content -->
         

@@ -11,7 +11,17 @@
   --accent:#BDD1FF;
   --text:#252528;
   --sidebar-color:#ffffff;
-  --bg-card:#fefefe;
+  --link-dropdown:#252528;
+  --bg-card:#ffffff;
+}
+.dark{
+  --background:#343434;
+  --sidebar-color:#484848;
+  --primary:#339FE9;
+  --primary-hover:#0079c9;
+  --text:#F4F9E9;
+  --link-dropdown:#9f9f9f;
+  --bg-card:#434343;
 }
 body {
   min-height: 100vh;
@@ -26,6 +36,8 @@ body {
   width: 6px;
   border-radius: 6px;
 }
+
+/* Sidebar */
 .sidebar {
   width: 200px;
   height: 100vh;
@@ -61,17 +73,20 @@ body {
   list-style: none;
   text-decoration: none;
 }
-.icon-dash{
-  margin-right: 5px;
-  font-size: 25px;
-}
+/* Sidebar */
+
+/* topbar */
 .title{
   font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text);
 }
 #vertical-line{
   width: 2px;
   height: 2rem;
   background-color: var(--text);
+}
+.profile-text{
+  color: var(--text);
 }
 .img-profile{
   width: 30px;
@@ -146,7 +161,20 @@ input:checked + .switch::after{
 .dropdown-menu{
   margin-right: 4.7rem;
   margin-top: 5px;
+  background-color: var(--background);
+  border: 1px solid #888888;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.dropdown-menu a{
+  color: var(--link-dropdown);
+}
+.dropdown-menu a:hover{
+  color: #252528;
+  background-color: #bebebe;
+}
+/* topbar */
+
+/* content-dashboard */
 .my-container {
   transition: 0.4s;
 }
@@ -183,7 +211,8 @@ input:checked + .switch::after{
 .bg-card-chart,
 .bg-card-table{
   background-color: var(--bg-card);
-  border-radius: 20px;
+  border-radius: 10px;
+  color: var(--text);
 }
 .bg-card-chart,
 .bg-card-table{
@@ -193,7 +222,9 @@ input:checked + .switch::after{
   border-radius: 10px;
   background-color: var(--accent);
   border: none;
+  color: #252528;
 }
 .no{
   margin-top: 15px;
 }
+/* content-dashboard */
