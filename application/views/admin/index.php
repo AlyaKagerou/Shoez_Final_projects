@@ -57,7 +57,7 @@
                 <div class="bg-card-table mt-4 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">Recent Order</h5>
-                        <table class="table">
+                        <table class="table text-light">
                             <thead>
                               <tr>
                                 <th scope="col">Order ID</th>
@@ -75,28 +75,39 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>@mdo</td>
-                                <td>@mdo</td>
+                                <td><span class="badge bg-success p-2">Succes</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
+                                <td>@mdo</td>
+                                <td><span class="badge bg-warning p-2 text-dark">Pending</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
+                                <td>@fat</td>
+                                <td>@mdo</td>
+                                <td><span class="badge bg-success p-2">Succes</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">4</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
+                                <td>@fat</td>
+                                <td>@mdo</td>
+                                <td><span class="badge bg-danger p-2">Canceled</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">5</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
+                                <td>@fat</td>
+                                <td>@mdo</td>
+                                <td><span class="badge bg-success p-2">Succes</span></td>
                               </tr>
                             </tbody>
                         </table>
