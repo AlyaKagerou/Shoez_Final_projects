@@ -212,11 +212,14 @@ input:checked + .switch::after{
 .bg-card-table{
   background-color: var(--bg-card);
   border-radius: 10px;
-  color: var(--text);
 }
 .bg-card-chart,
 .bg-card-table{
   padding: 10px;
+}
+.table,
+.card-title{
+  color: var(--text);
 }
 .secondary-bg{
   border-radius: 10px;

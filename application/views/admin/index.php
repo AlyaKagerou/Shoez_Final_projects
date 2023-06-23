@@ -57,7 +57,7 @@
                 <div class="bg-card-table mt-4 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">Recent Order</h5>
-                        <table class="table text-light">
+                        <table class="table">
                             <thead>
                               <tr>
                                 <th scope="col">Order ID</th>
