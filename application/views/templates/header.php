@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Tentang</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#">Produk</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">Kontak </a>
                     </li>
                 </ul>
                 <div class="toggle">
@@ -40,7 +40,7 @@
                     <input type="checkbox" id="switch">
                     <label for="switch" class="switch" onclick="ubahMode()"></label>
                 </div>
-                <button class="btn-login">Login</button>
+                <button class="btn-login">Masuk</button>
             </div>
         </div>
     </nav>
