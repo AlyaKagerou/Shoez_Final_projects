@@ -241,4 +241,7 @@ input:checked + .switch::after{
   font-weight: 700;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+.ft{
+  color: var(--text);
+}
 /* content-dashboard */
