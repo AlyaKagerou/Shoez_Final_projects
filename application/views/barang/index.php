@@ -2,6 +2,10 @@
 
 <!-- main Content -->
 <div class="col-12 col-lg">
+    <div class="butt mt-3">
+        <button class="btn butt-add"><i class='bx bx-plus me-2'></i>Tambah Barang</button>
+        <button class="btn btn-danger"><i class='bx bxs-file-pdf me-2'></i>Export</button>
+    </div>
     <div class="bg-card-table mt-4 p-4">
         <table class="table table-bordered">
             <thead class="table-light">

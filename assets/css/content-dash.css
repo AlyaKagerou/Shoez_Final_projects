@@ -230,4 +230,15 @@ input:checked + .switch::after{
 .no{
   margin-top: 15px;
 }
+.butt-add{
+  background-color: var(--primary);
+  color:#fff;
+}
+.sidebar-heading{
+  color: var(--text);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 /* content-dashboard */
