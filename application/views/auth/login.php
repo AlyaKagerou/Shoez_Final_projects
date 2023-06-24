@@ -11,10 +11,12 @@
                     <?= $this->session->flashdata('message'); ?>
                     <form method="post" action="<?= base_url('auth');?>">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email" value="<?= set_value('email')?>">
+                            <?= form_error('email', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
-                        <div class="mb-3 d-flex gap-2">
+                        <div class="mb-3">
                             <input type="password" class="form-control" id="password" name="password" placeholder="Your Password">
+                            <?= form_error('password', '<small class="text-danger pl-3">', '</small>');?>
                         </div>
                         <div class="mb-3 forpass">
                             <span><a href="">Forgot Password</a></span>
