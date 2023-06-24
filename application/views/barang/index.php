@@ -20,18 +20,20 @@
                 </tr>
             </thead>
             <tbody>
+                <?php foreach ($all_barang as $barang): ?>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                    <td><?= $no++ ?></td>
+					<td><?= $barang->kode_barang ?></td>
+				    <td><?= $barang->nama_barang ?></td>
+                    <td>Rp <?= number_format($barang->harga_beli, 0, ',', '.') ?></td>
+					<td>Rp <?= number_format($barang->harga_jual, 0, ',', '.') ?></td>
+				    <td><?= $barang->stok ?> <?= strtoupper($barang->satuan) ?></td>
                     <td>
-                        <a href="" class="btn btn-success"><i class='bx bxs-pencil'></i></a>
-                        <a onclick="return confirm('apakah anda yakin?')" href="" class="btn btn-danger"><i class='bx bxs-trash-alt'></i></a>
-                    </td>
+						<a type="button" class="btn btn-info" href="<?= base_url('barang/ubah/' . $barang->id)?>"><i class="bx bxs-pencil"></i></a>
+                        <a type="button" class="btn btn-danger" href="<?= base_url('barang/hapus/'. $barang->id)?>"><i class="bx bxs-trash"></i></a>
+					</td>
                 </tr>
+                <?php endforeach ?>
             </tbody>
         </table>
     </div>
