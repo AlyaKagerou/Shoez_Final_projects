@@ -1,4 +1,4 @@
-<h1 class="mt-3 title">Data Barang</h1>
+<h1 class="mt-3 title"><?= $judul; ?></h1>
 
 <!-- main Content -->
 <div class="col-12 col-lg">

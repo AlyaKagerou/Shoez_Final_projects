@@ -24,8 +24,12 @@ class Barang extends CI_Controller {
             $this->session->set_flashdata('error', 'Tambah data hanya untuk Admin');
             redirect('penjualan');
         }
-        $this->data['title'] = 'Tambah Barang';
+        $this->data['judul'] = 'Tambah Barang';
+        $this->load->view('templates/header_dashbo',$this->data);
+        $this->load->view('templates/sidebar');
+        $this->load->view('templates/topbar');
         $this->load->view('barang/tambah',$this->data);
+        $this->load->view('templates/footer_dashbo');
     }
     public function proses_tambah(){
         if($this->session->login['role'] == 'kasir'){
@@ -56,7 +60,12 @@ class Barang extends CI_Controller {
         }
         $this->data['title'] = 'Ubah Barang';
         $this->data['barang'] = $this->m_barang->lihat_id($id);
+
+        $this->load->view('templates/header_dashbo',$this->data);
+        $this->load->view('templates/sidebar');
+        $this->load->view('templates/topbar');
         $this->load->view('barang/ubah', $this->data);
+        $this->load->view('templates/footer_dashbo');
     }
     public function proses_ubah($kode_barang){
         if($this->session->login['role'] == 'kasir'){
