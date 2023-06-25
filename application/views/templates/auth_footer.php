@@ -1,6 +1,6 @@
     <!-- footer -->
             <div class="copyright text-center mb-1">
-                <span class="text-footer">&copy;2023 Shoez. | All Reserved</span>   
+                <span class="text-footer">Copyright &copy;2023 Zhaalz & Friends | All Reserved</span>   
             </div>
         </div>
     <!-- footer -->

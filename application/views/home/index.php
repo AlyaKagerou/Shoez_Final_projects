@@ -232,7 +232,7 @@
             </div>
             <hr class="hr-footer">
             <div class="text-center">
-                <span class="text-light">&copy;2023 Shoez. | All Reserved</span>   
+                <span class="text-light">Copyright &copy;2023 Zhaalz & Friends | All Reserved</span>   
             </div>
         </div>
     </footer>

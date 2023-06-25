@@ -40,7 +40,7 @@
                     <input type="checkbox" id="switch">
                     <label for="switch" class="switch" onclick="ubahMode()"></label>
                 </div>
-                <button class="btn-login">Masuk</button>
+                <a href="<?= base_url('auth')?>" class="btn-login text-decoration-none">Masuk</a>
             </div>
         </div>
     </nav>
