@@ -3,8 +3,8 @@
 <!-- main Content -->
 <div class="col-12 col-lg">
     <div class="butt mt-3">
-        <button class="btn butt-add"><i class='bx bx-plus me-2'></i>Tambah Barang</button>
-        <button class="btn btn-danger"><i class='bx bxs-file-pdf me-2'></i>Export</button>
+        <a href="<?= base_url('barang/tambah')?>" class="btn butt-add"><i class='bx bx-plus me-2'></i>Tambah Barang</a>
+        <a href="#" class="btn btn-danger"><i class='bx bxs-file-pdf me-2'></i>Export</a>
     </div>
     <div class="bg-card-table mt-4 p-4">
         <table class="table table-bordered">

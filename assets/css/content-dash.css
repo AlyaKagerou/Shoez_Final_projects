@@ -234,6 +234,10 @@ input:checked + .switch::after{
   background-color: var(--primary);
   color:#fff;
 }
+.butt-add:hover{
+  background-color: var(--primary-hover);
+  color: #fff;
+}
 .sidebar-heading{
   color: var(--text);
   font-size: 12px;
@@ -243,5 +247,20 @@ input:checked + .switch::after{
 }
 .ft{
   color: var(--text);
+}
+.table-light th{
+  background-color: var(--primary);
+  text-align: center;
+}
+footer{
+  position: absolute;
+  margin-bottom: 0.2rem;
+  padding: 3px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.table-bordered{
+  border: 1px solid #747474;
 }
 /* content-dashboard */

@@ -42,8 +42,8 @@
 
         <div class="row">
             <!-- chart -->
-            <div class="col-12 col-md-6">
-                <div class="mt-4 bg-card-chart shadow-sm">
+            <div class="col-12 col-sm-5">
+                <div class="mt-3 bg-card-chart shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <canvas id="myChart"></canvas>
@@ -53,8 +53,8 @@
             <!-- chart -->
 
             <!-- tabel -->
-            <div class="col-12 col-md-6">
-                <div class="bg-card-table mt-4 shadow-sm">
+            <div class="col-12 col-md-7">
+                <div class="bg-card-table mt-3 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">Recent Order</h5>
                         <table class="table">
