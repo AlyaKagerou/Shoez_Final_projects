@@ -19,19 +19,19 @@
                     <div id="vertical-line"></div>
                     <div class="dropdown">
                         <button class="dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="profile-text mx-1">Alya</span>
-                            <img class="img-profile rounded-circle img-fluid mx-3" src="<?= base_url('assets/img/profile/default.png')?>">
+                            <span class="profile-text mx-1"><?= $user['name']; ?></span>
+                            <img class="img-profile rounded-circle img-fluid mx-3" src="<?= base_url('assets/img/profile/') . $user['image']?>">
                         </button>
                         <ul class="dropdown-menu mt-3">
                             <li class="d-flex align-items-center">
-                                <a class="dropdown-item" href="#"><i class='bx bxs-user me-2'></i>Profile</a>
+                                <a class="dropdown-item" href="#"><i class='bx bxs-user me-2'></i>Profil Ku</a>
                             </li>
                             <li class="d-flex align-items-center">
-                                <a class="dropdown-item" href="#"><i class='bx bxs-cog me-2'></i>Settings</a>
+                                <a class="dropdown-item" href="#"><i class='bx bxs-cog me-2'></i>Pengaturan</a>
                             </li>
                             <hr class="dropdown-divider">
                             <li class="d-flex align-items-center">
-                                <a class="dropdown-item" href="#"><i class='bx bxs-log-out me-2'></i>Log Out</a>
+                                <a class="dropdown-item" href="<?= base_url('auth/logout');?>"><i class='bx bxs-log-out me-2'></i>Keluar</a>
                             </li>
                         </ul>
                     </div>
