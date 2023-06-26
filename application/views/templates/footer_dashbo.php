@@ -1,4 +1,4 @@
-             <footer class="ft text-center">
+             <footer class="ft text-center mt-4">
                 <span class="text-footer"> Copyright &copy;2023 Zhaalz & Friends | All Reserved</span>   
             </footer>
     
