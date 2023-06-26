@@ -1,12 +1,12 @@
-<h1 class="my-3 title">Dashboard</h1>
+<h1 class="my-3 title"><?= $judul; ?></h1>
 
         <!-- main content -->
         <div class="row">
             <div class="col-md-3">
                 <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center">
                     <div>
-                        <h3 class="no">0</h3>
-                        <p class="asd">Products</p>
+                        <h3 class="no ft">0</h3>
+                        <p class="ft">Products</p>
                     </div>
                     <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
@@ -14,8 +14,8 @@
             <div class="col-md-3">
                 <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center">
                     <div>
-                        <h3 class="no">0</h3>
-                        <p class="asd">Products</p>
+                        <h3 class="no ft">0</h3>
+                        <p class="ft">Products</p>
                     </div>
                     <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
@@ -23,8 +23,8 @@
             <div class="col-md-3">
                 <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center">
                     <div>
-                        <h3 class="no">0</h3>
-                        <p class="asd">Products</p>
+                        <h3 class="no ft">0</h3>
+                        <p class="ft">Products</p>
                     </div>
                     <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>
@@ -32,8 +32,8 @@
             <div class="col-md-3">
                 <div class="p-3 bg-card shadow-sm d-flex justify-content-around align-items-center">
                     <div>
-                        <h3 class="no">0</h3>
-                        <p class="asd">Products</p>
+                        <h3 class="no ft">0</h3>
+                        <p class="ft">Products</p>
                     </div>
                     <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
                 </div>

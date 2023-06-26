@@ -39,7 +39,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 200px;
+  width: 220px;
   height: 100vh;
   position: fixed;
   margin-left: -300px;
@@ -52,22 +52,23 @@ body {
   font-size: 3rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.side-item .active{
-  background-color: var(--primary);
-  color: #ffffff;
+.side-link:hover{
+  background-color: #bebebe;
+  color: #252528;
   margin-right: 1rem;
   border-radius: 6px;
-  padding:10px;
+  padding: 7px;
 }
 .side-link {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
-  color: #9f9f9f;
+  color: var(--text);
   display: flex;
   align-items: center;
-  margin-left: -1rem;
+  margin-left: -1.1rem;
   margin-top: 1rem;
   padding: 0.4rem 0;
+  transition: all 0.2s;
 }
 .side-nav{
   list-style: none;
@@ -182,7 +183,7 @@ input:checked + .switch::after{
   margin-left: 0;
 }
 .active-cont {
-  margin-left: 200px;
+  margin-left: 230px;
 }
 .btn-menu{
   background-color: var(--background);
