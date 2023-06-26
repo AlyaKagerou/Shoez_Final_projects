@@ -44,7 +44,7 @@
                 </ul>
             <?php  endforeach;?>
         
-            <div class="border-bottom mx-3"></div>
+            <div class="border-bottom mx-3 mb-3"></div>
 
         <?php endforeach; ?>
 
