@@ -1,6 +1,7 @@
 <?php  
 
 class Produk_models extends CI_Model{
+    protected $useAutoIncrement = true;
     public function getAllProduk()
     {
         return $this->db->get('barang')->result_array();
@@ -16,5 +17,10 @@ class Produk_models extends CI_Model{
             'satuan' => $this->input->post('satuan')
         ];
         $this->db->insert('barang', $data);
+    }
+    public function hapusData($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('barang');
     }
 }

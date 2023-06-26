@@ -24,7 +24,7 @@
             <tbody>
                 <?php foreach($produk as $barang): ?>
                 <tr>
-                    <td><?= $no++?></td>
+                    <td><?= $no++ ?></td>
 					<td><?= $barang['kode_barang'];?></td>
 				    <td><?= $barang['nama_barang'];?></td>
 					<td><?= $barang['harga_beli'];?></td>
@@ -33,7 +33,7 @@
 					<td><?= $barang['satuan'];?></td>
 					<td>
 						<a href="#" class="btn btn-info"><i class="bx bxs-pencil"></i></a>
-						<a href="#" class="btn btn-danger"><i class="bx bxs-trash-alt"></i></a>
+						<a href="<?= base_url();?>produk/hapus/<?= $barang['id'];?>" class="btn btn-danger" onclick="return confirm('yakin?');"><i class="bx bxs-trash-alt"></i></a>
 					</td>
                 </tr>
                 <?php endforeach; ?>

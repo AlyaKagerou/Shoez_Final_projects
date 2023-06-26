@@ -33,7 +33,32 @@ class Produk extends CI_Controller {
             $this->load->view('templates/footer_dashbo');
         }else{
             $this->Produk_models->tambahData();
-            $this->session->set_flashdata('message', '<div class="alert alert-success mt-3" role="alert">Data berhasil ditambahkan!</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show mt-3" role="alert">Data berhasil ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+           redirect('produk');
+        }
+    }
+    public function hapus($id)
+    {
+        $this->Produk_models->hapusData($id);
+        $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show mt-3" role="alert">Data berhasil dihapus!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        redirect('produk');
+    }
+    public function ubah(){
+        $data['judul'] = 'Ubah Produk';
+        
+        $this->form_validation->set_rules('nama_barang','Nama Barang','required');
+        $this->form_validation->set_rules('harga_beli','Harga Beli','required|numeric');
+        $this->form_validation->set_rules('harga_jual','Harga Jual','required|numeric');
+        $this->form_validation->set_rules('stok','Stok','required|numeric');
+        if($this->form_validation->run() == false){
+            $this->load->view('templates/header_dashbo',$data);
+            $this->load->view('templates/sidebar');
+            $this->load->view('templates/topbar');
+            $this->load->view('produk/ubah', $data);
+            $this->load->view('templates/footer_dashbo');
+        }else{
+            $this->Produk_models->ubahData();
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show mt-3" role="alert">Data berhasil ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
            redirect('produk');
         }
     }
