@@ -33,8 +33,8 @@
 
         <?php foreach($subMenu as $sm): ?>
             <ul class="side-nav d-flex flex-column">
-                <li class="side-item"><a href="<?= base_url($m['url']);?>" class="side-link active">
-                <i class="<?= $m['icon'];?>"></i><span><?= $m['title']; ?></span></a></li>
+                <li class="side-item"><a href="<?= base_url($sm['url']);?>" class="side-link active">
+                <i class="<?= $sm['icon'];?>"></i><span><?= $sm['title']; ?></span></a></li>
             </ul>
             <?php endforeach; ?>
 

@@ -63,4 +63,4 @@ class Produk extends CI_Controller {
         }
     }
 		
-}
+} 
