@@ -25,7 +25,7 @@ class Menu extends CI_Controller {
             $this->load->view('templates/footer_dashbo');
         }else{
             $this->db->insert('user_menu',['menu' => $this->input->post('menu')]);
-            $this->session->set_flashdata('message', '<div class="alert alert-success mt-3" role="alert">New menu Added!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success mt-3" role="alert">Menu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
             redirect('menu');
         }
     }
@@ -57,7 +57,7 @@ class Menu extends CI_Controller {
                 'is_active' => $this->input->post('is_active')
             ];
             $this->db->insert('user_sub_menu', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Submenu Baru sudah ditambahkan!</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Submenu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
             redirect('menu/submenu');
         }
     }

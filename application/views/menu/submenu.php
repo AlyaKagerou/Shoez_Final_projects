@@ -9,7 +9,7 @@
             </div>
         <?php endif; ?>
         <?= $this->session->flashdata('message');  ?>
-        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bx bx-plus me-2"></i> Tambah Sub Menu Baru</a>
+        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#newSubMenuModal"><i class="bx bx-plus me-2"></i> Tambah Sub Menu Baru</a>
         <div class="bg-card-table mt-3 p-4">
             <table class="table table-bordered">
                 <thead class="table-light">
@@ -48,47 +48,47 @@
 <!-- main content -->
 
 <!-- modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Sub Menu Baru</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <form action="<?= base_url('menu/submenu');?>" method="post">
-        <div class="modal-body">
-            <div class="mb-3">
-                <input type="text" class="form-control" id="title" name="title" placeholder="Masukkan Sub Menu Baru">
+<div class="modal fade" id="newSubMenuModal" tabindex="-1" aria-labelledby="newMenuSubModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newSubMenuModalLabel">Tambah Submenu Baru</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-                <select name="menu_id" id="menu_id" class="form-control">
-                    <option value="">Select Menu</option>
-                    <?php foreach($menu as $m): ?>
-                        <option value="<?= $m['id'];?>"><?= $m['menu']; ?></option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="icon" name="icon" placeholder="Masukkan Sub Menu Baru Url">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="url" name="url" placeholder="Masukkan Sub Menu Baru Icon">
-            </div>
-            <div class="mb-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="is_active" id="is_active" value="1" checked>
-                    <label class="form-check-label" for="is_active">
-                        Active?
-                    </label>
-                </div> 
-            </div>
+            <form action="<?= base_url('menu/submenu');?>" method="post">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Submenu title">
+                    </div>
+                    <div class="mb-3">
+                        <select name="menu_id" id="menu_id" class="form-control">
+                            <option value="">Select Menu</option>
+                            <?php foreach($menu as $m): ?>
+                                <option value="<?= $m['id']; ?>"><?= $m['menu']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="url" name="url" placeholder="Submenu url">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="icon" name="icon" placeholder="Submenu icon">
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="1" name="is_active" id="is_active" checked>
+                            <label class="form-check-label" for="is_active">
+                                Active?
+                            </label>
+                        </div> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
+                </div>
+            </form>
         </div>
-      </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-        <button type="submit" class="btn butt-add">Tambah</button>
-      </div>
     </div>
-  </div>
 </div>
 <!-- modal -->
