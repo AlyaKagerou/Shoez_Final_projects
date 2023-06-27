@@ -29,6 +29,19 @@ class Admin extends CI_Controller {
         $this->load->view('admin/role', $data);
         $this->load->view('templates/footer_dashbo');
     }
+
+    public function Pelanggan(){
+        $data['judul'] = 'Data Pelanggan';
+        $data['pelanggan'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['role'] = $this->db->get('user_role')->result_array();
+        $data['no'] = 1;
+
+        $this->load->view('templates/header_dashbo',$data);
+        $this->load->view('templates/sidebar');
+        $this->load->view('templates/topbar');
+        $this->load->view('admin/pelanggan', $data);
+        $this->load->view('templates/footer_dashbo');
+    }
     public function roleAccess($role_id){
         $data['judul'] = 'Role Access';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();

@@ -51,6 +51,9 @@
         <ul class="side-nav d-flex flex-column">
             
             <li class="side-item">
+                <a href="<?= base_url('produk');?>" class="side-link"><i class='bx bxs-cart me-2'></i>Produk</a>
+            </li>
+            <li class="side-item">
                 <a href="<?= base_url('auth/logout');?>" class="side-link"><i class='bx bxs-log-out me-2'></i>Keluar</a>
             </li>
         </ul>

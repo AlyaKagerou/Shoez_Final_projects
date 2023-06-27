@@ -19,8 +19,8 @@
                     <div id="vertical-line"></div>
                     <div class="dropdown">
                         <button class="dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="profile-text mx-1"><?= $user['name']; ?></span>
-                            <img class="img-profile rounded-circle img-fluid mx-3" src="<?= base_url('assets/img/profile/') . $user['image']?>">
+                            <span class="profile-text mx-1">Alya</span>
+                            <img class="img-profile rounded-circle img-fluid mx-3" src="<?= base_url('assest/img/profile/default.png')?>">
                         </button>
                         <ul class="dropdown-menu mt-3">
                             <li class="d-flex align-items-center">

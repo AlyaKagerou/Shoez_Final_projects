@@ -1,10 +1,10 @@
 <?php  
 
-class Produk_models extends CI_Model{
+class Pelanggan_models extends CI_Model{
     protected $useAutoIncrement = true;
-    public function getAllProduk()
+    public function getAllPelanggan()
     {
-        return $this->db->get('barang')->result_array();
+        return $this->db->get('pelanggan')->result_array();
     }
     public function tambahData()
     {
@@ -16,7 +16,7 @@ class Produk_models extends CI_Model{
             'stok' =>$this->input->post('stok'),
             'satuan' => $this->input->post('satuan')
         ];
-        $this->db->insert('barang', $data);
+        $this->db->insert('pelanggan', $data);
     }
     public function ubahData()
     {
@@ -28,11 +28,11 @@ class Produk_models extends CI_Model{
             'stok' =>$this->input->post('stok'),
             'satuan' => $this->input->post('satuan')
         ];
-        $this->db->insert('barang', $data);
+        $this->db->insert('pelanggan', $data);
     }
     public function hapusData($id)
     {
         $this->db->where('id', $id);
-        $this->db->delete('barang');
+        $this->db->delete('pelanggan');
     }
 }

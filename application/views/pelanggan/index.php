@@ -3,7 +3,7 @@
 <!-- main Content -->
 <div class="col-12 col-lg">
     <div class="butt mt-3">
-        <a href="<?= base_url('produk/tambah')?>" class="btn butt-add"><i class='bx bx-plus me-2'></i>Tambah Barang</a>
+        <a href="<?= base_url('pelanggan/tambah')?>" class="btn butt-add"><i class='bx bx-plus me-2'></i>Tambah Barang</a>
         <a href="<?= base_url('excel/export_excel_barang');?>" class="btn btn-success"><i class='bx bxs-file-excel me-2'></i>Excel</a>
     </div>
     <?= $this->session->flashdata('message'); ?>
@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($produk as $barang): ?>
+                <?php foreach($pelanggan as $pelanggan): ?>
                 <tr>
                     <td><?= $no++ ?></td>
 					<td><?= $barang['kode_barang'];?></td>
@@ -32,8 +32,8 @@
 					<td><?= $barang['stok'];?></td>
 					<td><?= $barang['satuan'];?></td>
 					<td>
-						<a href="<?= base_url('produk/ubah');?>" class="btn btn-info"><i class="bx bxs-pencil"></i></a>
-						<a href="<?= base_url();?>produk/hapus/<?= $barang['id'];?>" class="btn btn-danger" onclick="return confirm('yakin?');"><i class="bx bxs-trash-alt"></i></a>
+						<a href="<?= base_url('pelanggan/ubah');?>" class="btn btn-info"><i class="bx bxs-pencil"></i></a>
+						<a href="<?= base_url();?>pelanggan/hapus/<?= $barang['id'];?>" class="btn btn-danger" onclick="return confirm('yakin?');"><i class="bx bxs-trash-alt"></i></a>
 					</td>
                 </tr>
                 <?php endforeach; ?>
