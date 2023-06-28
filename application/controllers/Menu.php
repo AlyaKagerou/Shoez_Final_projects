@@ -7,8 +7,7 @@ class Menu extends CI_Controller {
         parent::__construct();
         is_logged_in();
     }
-    public function index()
-    {
+    public function index(){
         $data['judul'] = 'Menu Management';
         $data['user'] =$this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -25,14 +24,14 @@ class Menu extends CI_Controller {
             $this->load->view('templates/footer_dashbo');
         }else{
             $this->db->insert('user_menu',['menu' => $this->input->post('menu')]);
-            $this->session->set_flashdata('message', '<div class="alert alert-success mt-3" role="alert">Menu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show mt-3" role="alert">Menu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
             redirect('menu');
         }
     }
     public function submenu(){
         $data['judul'] = 'Submenu Management';
         $data['user'] =$this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $this->load->model('Menu_model', 'menu');
+        $this->load->model('M_menu', 'menu');
 
         $data['submenu'] = $this->menu->getSubMenu();
         $data['menu'] = $this->db->get('user_menu')->result_array();
@@ -57,9 +56,8 @@ class Menu extends CI_Controller {
                 'is_active' => $this->input->post('is_active')
             ];
             $this->db->insert('user_sub_menu', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Submenu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show" role="alert">Submenu Baru sudah ditambahkan!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
             redirect('menu/submenu');
         }
     }
-
 }

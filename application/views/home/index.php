@@ -74,7 +74,7 @@
                         <img src="<?php echo base_url('assets/img/shoe_red.png')?>" class="card-img-top rounded" alt="product1">
                         <div class="card-body-product">
                             <div class="rating d-flex align-items-center">
-                                <i class='bx bxs-star bx-sm' style="color: #FFDB1E;"></i>
+                                <i class="fa-solid fa-star fa-lg fw me-1" style="color: #FFDB1E;"></i>
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Red</h5>
@@ -87,7 +87,7 @@
                         <img src="<?php echo base_url('assets/img/shoe_yello.png')?>" class="card-img-top rounded" alt="product2">
                         <div class="card-body-product">
                             <div class="rating d-flex align-items-center">
-                                <i class='bx bxs-star bx-sm' style="color: #FFDB1E;"></i>
+                                <i class="fa-solid fa-star fa-lg fw me-1" style="color: #FFDB1E;"></i>
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Yellow</h5>
@@ -100,7 +100,7 @@
                         <img src="<?php echo base_url('assets/img/shoe_red.png')?>" class="card-img-top rounded" alt="product3">
                         <div class="card-body-product">
                             <div class="rating d-flex align-items-center">
-                                <i class='bx bxs-star bx-sm' style="color: #FFDB1E;"></i>
+                                <i class="fa-solid fa-star fa-lg fw me-1" style="color: #FFDB1E;"></i>
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Red</h5>
@@ -113,7 +113,7 @@
                         <img src="<?php echo base_url('assets/img/shoe_yello.png')?>" class="card-img-top rounded" alt="product4">
                         <div class="card-body-product">
                             <div class="rating d-flex align-items-center">
-                                <i class='bx bxs-star bx-sm' style="color: #FFDB1E;"></i>
+                                <i class="fa-solid fa-star fa-lg fw me-1" style="color: #FFDB1E;"></i>
                                 <span>(4.5)</span>
                             </div>
                             <h5 class="product-title">Air Max Yellow</h5>
@@ -148,28 +148,28 @@
         <div class="container-content py-5">
             <div class="row row-gap-3">
                 <div class="col-12 col-lg-4">
-                    <div class="cardprimer p-3 rounded">
-                        <div class="card-body">
-                            <i class="bx bxs-check-shield bx-md icon-feature"></i>
-                            <h4 class="card-title-service mt-2">Velit officia.</h4>
+                    <div class="cardprimer p-4 rounded">
+                        <div class="card-body h-100">
+                            <i class="fa-solid fa-circle-check fa-2xl icon-feature"></i>
+                            <h4 class="card-title-service mt-4">Velit officia.</h4>
                             <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="cardprimer p-3 rounded">
-                        <div class="card-body">
-                            <i class="bx bxs-package bx-md icon-feature"></i>
-                            <h4 class="card-title-service mt-2">Velit officia.</h4>
+                    <div class="cardprimer p-4 rounded">
+                        <div class="card-body h-100">
+                            <i class="fa-solid fa-box fa-2xl icon-feature"></i>
+                            <h4 class="card-title-service mt-4">Velit officia.</h4>
                             <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="cardprimer p-3 rounded">
-                        <div class="card-body">
-                            <i class="bx bxs-truck bx-md icon-feature"></i>
-                            <h4 class="card-title-service mt-2">Velit officia.</h4>
+                    <div class="cardprimer p-4 rounded">
+                        <div class="card-body h-100">
+                            <i class="fa-solid fa-truck-fast fa-2xl icon-feature"></i>
+                            <h4 class="card-title-service mt-4">Velit officia.</h4>
                             <p class="card-text-service">Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>
@@ -222,11 +222,11 @@
                 </div>
                 <div class="col-md-3">
                     <p class="links social-link">Follow us</p>
-                    <ul class="d-flex footer-item">
-                        <li class="footer-soc"><a href="#"><i class='bx bxl-facebook-circle bx-md'></i></a></li>
-                        <li class="footer-soc"><a href="#"><i class='bx bxl-instagram bx-md'></i></a></li>
-                        <li class="footer-soc"><a href="#"><i class='bx bxl-whatsapp bx-md'></i></a></li>
-                        <li class="footer-soc"><a href="#"><i class='bx bxl-twitter bx-md'></i></a></li>
+                    <ul class="d-flex footer-item mt-3">
+                        <li class="footer-soc"><a href="#"><i class="fa-brands fa-facebook-f fa-2xl"></i></a></li>
+                        <li class="footer-soc"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                        <li class="footer-soc"><a href="#"><i class="fa-brands fa-whatsapp fa-2xl"></i></a></li>
+                        <li class="footer-soc"><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
                     </ul>
                 </div>
             </div>

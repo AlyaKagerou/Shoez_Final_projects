@@ -15,9 +15,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $i = 1; ?>
                     <?php foreach ($menu as $m) : ?>
                     <tr>
-                        <th scope="row"><?= $no++ ?></th>
+                        <th scope="row"><?= $i; ?></th>
                         <td><?= $m['menu']; ?></td>
                         <td>
                             <div class="form-check">
@@ -25,6 +26,7 @@
                             </div>
                         </td>
                     </tr>
+                    <?php $i++; ?>
                     <?php endforeach; ?>
                 </tbody>
             </table>
@@ -32,4 +34,3 @@
     </div>
 </div>
 <!-- main content -->
-

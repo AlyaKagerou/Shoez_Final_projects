@@ -8,7 +8,7 @@
                         <h3 class="no ft">0</h3>
                         <p class="ft">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
+                    <i class="fa-solid fa-cubes fa-2xl secondary-bg fs-1"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -17,7 +17,7 @@
                         <h3 class="no ft">0</h3>
                         <p class="ft">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
+                    <i class="fa-solid fa-cubes fa-2xl secondary-bg fs-1"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -26,7 +26,7 @@
                         <h3 class="no ft">0</h3>
                         <p class="ft">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
+                    <i class="fa-solid fa-cubes fa-2xl secondary-bg fs-1"></i>
                 </div>
             </div>
             <div class="col-md-3">
@@ -35,7 +35,7 @@
                         <h3 class="no ft">0</h3>
                         <p class="ft">Products</p>
                     </div>
-                    <i class="bx bxs-package bx-md fs-1 secondary-bg p-3"></i>
+                    <i class="fa-solid fa-cubes fa-2xl secondary-bg fs-1"></i>
                 </div>
             </div>
         </div>

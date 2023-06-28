@@ -3,7 +3,8 @@
 <!-- main content -->
 <div class="row">
     <div class="col-lg-4">
-        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#newMenuModal"><i class="bx bx-plus me-2"></i> Tambah Menu Baru</a>
+        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#newMenuModal"><i class="fa-solid fa-plus fw me-2"></i>Tambah Menu Baru</a>
+        <?= form_error('menu','<div class="alert alert-danger mt-2" role="alert">','</div>'); ?>
         <?= $this->session->flashdata('message'); ?>
         <div class="bg-card-table mt-3 p-4">
             <table class="table table-bordered">
@@ -20,8 +21,8 @@
                         <th scope="row"><?= $no++ ?></th>
                         <td><?= $m['menu']; ?></td>
                         <td>
-                            <a href="#" class="btn btn-info"><i class="bx bxs-pencil"></i></a>
-                            <a href="#" class="btn btn-danger"><i class="bx bxs-trash-alt"></i></a>
+                            <a href="#" class="btn btn-info"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

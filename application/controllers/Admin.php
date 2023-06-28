@@ -2,8 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct();
         is_logged_in();
     }
@@ -29,21 +28,8 @@ class Admin extends CI_Controller {
         $this->load->view('admin/role', $data);
         $this->load->view('templates/footer_dashbo');
     }
-
-    public function Pelanggan(){
-        $data['judul'] = 'Data Pelanggan';
-        $data['pelanggan'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['role'] = $this->db->get('user_role')->result_array();
-        $data['no'] = 1;
-
-        $this->load->view('templates/header_dashbo',$data);
-        $this->load->view('templates/sidebar');
-        $this->load->view('templates/topbar');
-        $this->load->view('admin/pelanggan', $data);
-        $this->load->view('templates/footer_dashbo');
-    }
     public function roleAccess($role_id){
-        $data['judul'] = 'Role Access';
+        $data['judul'] = 'Role Akses';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['role'] = $this->db->get_where('user_role', ['id' => $role_id])->row_array();
         $data['no'] = 1;
@@ -75,6 +61,6 @@ class Admin extends CI_Controller {
             $this->db->delete('user_access_menu', $data);
         }
 
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Akses sudah diubah!</div>');
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Access Changed!</div>');
     }
 }

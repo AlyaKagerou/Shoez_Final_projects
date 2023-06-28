@@ -3,7 +3,7 @@
 <!-- main content -->
 <div class="row">
     <div class="col-lg-4">
-        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#newRoleModal"><i class="bx bx-plus me-2"></i> Tambah Role Baru</a>
+        <a href="" class="btn butt-add" data-bs-toggle="modal" data-bs-target="#newRoleModal"><i class="fa-solid fa-plus fw me-2"></i>Tambah Role Baru</a>
         <?= $this->session->flashdata('message'); ?>
         <div class="bg-card-table mt-3 p-4">
             <table class="table table-bordered">
@@ -20,9 +20,9 @@
                         <th scope="row"><?= $no++ ?></th>
                         <td><?= $r['role']; ?></td>
                         <td>
-                            <a href="<?= base_url('admin/roleaccess/'). $r['id'];?>" class="btn btn-warning"><i class="bx bxs-lock-alt"></i></a>
-                            <a href="#" class="btn btn-info"><i class="bx bxs-pencil"></i></a>
-                            <a href="#" class="btn btn-danger"><i class="bx bxs-trash-alt"></i></a>
+                            <a href="<?= base_url('admin/roleaccess/'). $r['id'];?>" class="btn btn-warning"><i class="fa-solid fa-user-lock"></i></a>
+                            <a href="#" class="btn btn-info"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

@@ -8,38 +8,39 @@
 			<div class="card-body">
 			<?= $this->session->flashdata('message'); ?>
 				<form action="" method="post">
+                    <input type="hidden" name="id" value="<?= $produk['id'];?>">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="mb-3">
 								<label for="kode_barang" class="ft">Kode Produk</label>
-								<input type="text" name="kode_barang" placeholder="Masukkan Kode Barang" autocomplete="off"  class="form-control" value="<?= mt_rand(10000000, 99999999) ?>" maxlength="8" readonly>
+								<input type="text" name="kode_barang" placeholder="Masukkan Kode Barang" autocomplete="off"  class="form-control" value="<?= mt_rand(10000000, 99999999) ?>" maxlength="8" readonly value="<?= $produk['kode_barang'];?>">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
 								<label for="nama_barang" class="ft">Nama Barang</label>
-								<input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Masukkan Produk">
+								<input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Masukkan Produk" value="<?= $produk['nama_barang'];?>">
 								<?= form_error('nama_barang', '<small class="text-danger pl-3">', '</small>');?>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
 								<label for="harga_beli" class="ft">Harga Beli</label>
-								<input type="text" class="form-control" id="harga_beli" name="harga_beli" placeholder="Masukkan Harga Beli">
+								<input type="text" class="form-control" id="harga_beli" name="harga_beli" placeholder="Masukkan Harga Beli" value="<?= $produk['harga_jual'];?>">
 								<?= form_error('harga_beli', '<small class="text-danger pl-3">', '</small>');?>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
 								<label for="harga-jual" class="ft">Harga Jual</label>
-								<input type="text" class="form-control" id="harga_jual" name="harga_jual" placeholder="Masukkan Harga Jual">
+								<input type="text" class="form-control" id="harga_jual" name="harga_jual" placeholder="Masukkan Harga Jual" value="<?= $produk['harga_beli'];?>">
 								<?= form_error('harga_jual', '<small class="text-danger pl-3">', '</small>');?>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
 								<label for="stok" class="ft">Stok</label>
-								<input type="text" class="form-control" id="stok" name="stok" placeholder="Masukkan Stok Produk">
+								<input type="text" class="form-control" id="stok" name="stok" placeholder="Masukkan Stok Produk" value="<?= $produk['stok'];?>">
 								<?= form_error('stok', '<small class="text-danger pl-3">', '</small>');?>
 							</div>
 						</div>
@@ -50,9 +51,9 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn butt-add" type="submit"><i class="bx bxs-save me-2"></i>Simpan</button>
+					<button class="btn butt-add" name="ubah" type="submit"><i class="bx bxs-save me-2"></i>Simpan Produk</button>
 					<button class="btn btn-danger"><i class="bx bx-x me-2"></i>Batal</button>
-					<a class="btn btn-secondary" href="<?= base_url('produk');?>"><i class="bx bx-left-arrow-alt me-2"></i>Kembali</a>
+					<a class="btn btn-secondary" href="<?= base_url('product');?>"><i class="bx bx-left-arrow-alt me-2"></i>Kembali</a>
 				</form>
 			</div>
 		</div>

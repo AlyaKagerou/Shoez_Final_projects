@@ -50,9 +50,9 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn butt-add" type="submit"><i class="bx bxs-save me-2"></i>Simpan</button>
+					<button class="btn butt-add" type="submit"><i class="bx bxs-save me-2"></i>Simpan Produk</button>
 					<button class="btn btn-danger"><i class="bx bx-x me-2"></i>Batal</button>
-					<a class="btn btn-secondary" href="<?= base_url('produk');?>"><i class="bx bx-left-arrow-alt me-2"></i>Kembali</a>
+					<a class="btn btn-secondary" href="<?= base_url('product');?>"><i class="bx bx-left-arrow-alt me-2"></i>Kembali</a>
 				</form>
 			</div>
 		</div>

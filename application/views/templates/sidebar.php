@@ -16,11 +16,10 @@
 
         <!-- looping menu -->
         <?php foreach($menu as $m): ?>
-        <div class="sidebar-heading ms-3 mt-4">
+        <div class="sidebar-heading ms-3">
             <?= $m['menu']; ?>
         </div>
         
-
         <!-- sub menu sesuai menu -->
         <?php 
         $menuId = $m['id'];
@@ -32,7 +31,9 @@
                         ";
         $subMenu = $this->db->query($querySubMenu)->result_array();
         ?>
-                <?php foreach($subMenu as $sm): ?>
+           
+        
+            <?php foreach($subMenu as $sm): ?>
                 <ul class="side-nav d-flex flex-column">
                     <?php if($judul == $sm['title']): ?>
                     <li class="side-item active">
@@ -46,15 +47,11 @@
         
             <div class="border-bottom mx-3 mb-3"></div>
 
-        <?php endforeach; ?>
+        <?php  endforeach;?>
 
         <ul class="side-nav d-flex flex-column">
-            
             <li class="side-item">
-                <a href="<?= base_url('produk');?>" class="side-link"><i class='bx bxs-cart me-2'></i>Produk</a>
-            </li>
-            <li class="side-item">
-                <a href="<?= base_url('auth/logout');?>" class="side-link"><i class='bx bxs-log-out me-2'></i>Keluar</a>
+                <a href="<?= base_url('auth/logout');?>" class="side-link"><i class="fa-solid fa-right-from-bracket fw fa-xl me-2"></i>Keluar</a>
             </li>
         </ul>
     </div>

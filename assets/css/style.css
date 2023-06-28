@@ -15,7 +15,8 @@
     --card-primary:#94d2ff;
     --text:#252528;
     --footer-color:#157ABF;
-    --icon-feature:#fdfff9;
+    --icon-feature:#05548a;
+    --links-footer:#fdfff9;
 }
 .dark{
     --background:#3c3c3c;
@@ -28,6 +29,7 @@
     --text:#F4F9E9;
     --footer-color:#282828;
     --icon-feature:#339FE9;
+    --links-footer:#339FE9;
 }
 ::-webkit-scrollbar{
     background: transparent;
@@ -300,7 +302,7 @@ input:checked + .switch::after{
 }
 .footername{
     font-weight: 700;
-    color: var(--icon-feature);
+    color: var(--links-footer);
 }
 .footerdesc{
     color: #fdfff9;
@@ -312,7 +314,7 @@ input:checked + .switch::after{
 .links{
     font-size:17px;
     font-weight: bold;
-    color: var(--icon-feature);
+    color: var(--links-footer);
     margin-top: 1rem;
 }
 .footer-item{

@@ -228,10 +228,10 @@ input:checked + .switch::after{
   color: var(--text);
 }
 .secondary-bg{
-  border-radius: 10px;
-  background-color: var(--accent);
+  border-radius: 0px;
+  padding: 30px;
   border: none;
-  color: #252528;
+  color: var(--text);
 }
 .no{
   margin-top: 15px;
