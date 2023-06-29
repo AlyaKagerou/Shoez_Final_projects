@@ -6,6 +6,8 @@
     <div class="row">
         <div class="col-lg">
             <a href="<?= base_url('product/tambah');?>" class="btn butt-add"><i class="fa-solid fa-plus fw me-2"></i>Tambah Data</a>
+            <a href="#" class="btn btn-danger"><i class="fa-solid fa-file-pdf fw me-2"></i>Export PDF</a>
+            <a href="<?= base_url('excel/export_excel_barang'); ?>" class="btn btn-success"><i class="fa-solid fa-file-excel fw me-2"></i>Export Excel</a>
             <?= $this->session->flashdata('message'); ?>
             <div class="bg-card-table mt-3 p-4">
                 <div class="row">
