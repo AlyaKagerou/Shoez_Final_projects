@@ -18,12 +18,6 @@ Shoez. adalah Project web toko sepatu seperti web sepatu pada umumnya. Project i
 
 [![demo-landingpage.png](https://i.postimg.cc/sfZSYZmv/demo-landingpage.png)](https://postimg.cc/s1svyxtr)
 
-
-## Demo
-
-Insert gif or link to demo
-
-
 ## Features
 
 - Mode Defaut/Gelap
