@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+use Dompdf\Dompdf;
 
 class Product extends CI_Controller {
     public function __construct(){
@@ -70,4 +71,17 @@ class Product extends CI_Controller {
            redirect('product');
         }
     }
+    public function export(){
+		$dompdf = new Dompdf();
+		$this->data['produk'] = $this->M_product->getAllProduct();
+		$this->data['title'] = 'Laporan Data Customer';
+		$this->data['no'] = 1;
+
+		$dompdf->setPaper('A4', 'Landscape');
+		$html = $this->load->view('product/laporan', $this->data, true);
+		$dompdf->load_html($html);
+		$dompdf->render();
+		$dompdf->stream('Laporan Data Barang Tanggal ' . date('d F Y'), array("Attachment" => false));
+	}
+    
 }
